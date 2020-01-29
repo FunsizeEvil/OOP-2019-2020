@@ -14,5 +14,6 @@ public class Main
 
         Cat topcat = new Cat();
         topcat.speak();
+        topcat.kill();
     }
 }
