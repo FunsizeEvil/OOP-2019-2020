@@ -18,8 +18,24 @@ public class BugZap extends PApplet
 
     void drawPlayer(float x, float y, float w)
     {
-
+        
     }
+
+    public void keyPressed()
+	{
+		if (keyCode == LEFT)
+		{
+			System.out.println("Left arrow pressed");
+		}
+		if (keyCode == RIGHT)
+		{
+			System.out.println("Right arrow pressed");
+		}
+		if (key == ' ')
+		{
+			System.out.println("SPACE key pressed");
+		}
+	}
 	
 
 }
