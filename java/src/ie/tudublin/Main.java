@@ -10,14 +10,14 @@ public class Main
 	}
     public static void main(String[] arg)
     {
-        System.out.println("Hello world!");
+        // System.out.println("Hello world!");
 
-        Animal misty = new Dog(); // Polymorphism
-        misty.setName("Misty");
-        System.out.println(misty.getName());  
-        misty.speak();  
-        Cat topcat = new Cat();
-        topcat.speak();
+        // Animal misty = new Dog(); // Polymorphism
+        // misty.setName("Misty");
+        // System.out.println(misty.getName());  
+        // misty.speak();  
+        // Cat topcat = new Cat();
+        // topcat.speak();
 
         Main main = new Main();
 		main.helloProcessing();
