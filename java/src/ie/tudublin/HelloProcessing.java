@@ -21,8 +21,8 @@ public class HelloProcessing extends PApplet
 		point(50, 50); // x, y
 		ellipse(100, 200, 50, 150); // cx, cy, w, h
 		fill(0, 255, 0);
-		rect(50, 10, 100, 200); // tlx, tly, w, h
-		triangle(10, 10, 100, 90, 200, 200); // vertices	
+		rect(50, 50, 400, 400); // tlx, tly, w, h
+		triangle(60, 60, 60,440, 440,240); // vertices	
 	}	
 	
 

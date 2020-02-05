@@ -10,7 +10,16 @@ public class BugZap extends PApplet
 	}
 
 	public void setup() {
-	}
+    }
+    
+    float playerX = 200;
+    float playerY = 100;
+    float playerWidth = 50;
+
+    void drawPlayer(float x, float y, float w)
+    {
+
+    }
 	
 
 }
