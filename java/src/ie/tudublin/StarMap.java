@@ -18,6 +18,24 @@ public class StarMap extends PApplet
 
     }
 
+    public void drawStars(){
+        
+    }
+
+    public void drawGrid()
+    {
+        float border = width * 0.05f;
+
+        stroke(0,0,255);
+
+        for(int i = -5; i<+ 5 ; i++){
+            float x = map(i, -5, 5, border, width - border);
+            line(x,border, height, height - border);
+            line(border, x, width - border, x);
+        }
+    }
+
+
     public void setup()
     {
         loadData();
@@ -44,7 +62,23 @@ public class StarMap extends PApplet
 
     public void draw()
     {
+        // float height = 800;
+        // float width = 800;
+        // int gap = 10;
+        // int indent = 50;
+        // float x =0;
+        // float y =0;
+        // line(x , y, x +100, y +100);
+        // for(int i =0; i < gap; i++)
+        // {
+        //     line(x , y, x +100, y +100);
+        //     background(0);
+		//     noStroke();
+        //     fill(255);
+            
+        // }
 
+        drawGrid();
     }
 
 }
