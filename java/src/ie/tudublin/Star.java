@@ -1,8 +1,5 @@
 package ie.tudublin;
 
-import processing.core.PApplet;
-import processing.data.TableRow;
-
 public class Star
 {
     private boolean hab;
@@ -12,6 +9,8 @@ public class Star
     private float yG;
     private float zG;
     private float absMag;
+
+
     
     public void setHab(boolean hab)
     {
@@ -88,7 +87,8 @@ public class Star
         this.yG = yG;
         this.zG = xG;
         this.distance = distance;
-        this.absMag = absMag;        
+        this.absMag = absMag;
+
     }
 
     // Default constructor
@@ -114,22 +114,20 @@ public class Star
         );
     }
 
-    public void render(PApplet pa)
-    {
-        float border = pa.width * 0.05f;
-        float x = PApplet.map(xG, -5, 5, border, pa.width - border);
-        float y = PApplet.map(yG, -5, 5, border, pa.height - border);
-        pa.noFill();
-        pa.stroke(255, 255, 0);
-        pa.line(x, y -5, x, y + 5);
-        pa.line(x - 5, y, x + 5, y);
-        pa.stroke(255, 0, 0);
-        pa.ellipse(x, y, absMag, absMag);
-        pa.textAlign(PApplet.LEFT, PApplet.CENTER);
-        pa.fill(255);
-        pa.text(displayName, x + 50, y);
+
+    public void Render(PApplet Pa){
+        float border = Pa.width * 0.05f;
+        float x = Pa.map(xG, -5, 5, border, Pa.width - border);
+        float y = Pa.map(yG, -5, 5, border, Pa.height - border);
+
+        Pa.Stroke(255, 255,0);
+        Pa.line(x,y - 5, x, y +5);
+        Pa.line(x - 5,y , x + 5, y) ;
+        //set stroke
+
+        Pa.ellipse(x, y, absMag, absMag);
+        
     }
 
 
-    
 }
